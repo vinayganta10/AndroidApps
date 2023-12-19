@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AffirmationsDemo</string>
+    <Affirmation1 name="affirmation1">one</Affirmation1>
+</resources>

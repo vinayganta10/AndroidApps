@@ -21,16 +21,16 @@ class MainActivity : ComponentActivity() {
         password = findViewById(R.id.two)
         b = findViewById(R.id.button)
         b.setOnClickListener{
-            if (username.text.toString() == "cvr" && password.text.toString() == "cvr"){
-//                val intent = Intent(this,MainActivity2::class.java)
-//                intent.putExtra("Username",username.text.toString())
-//                intent.putExtra("Password",password.text.toString())
-                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://google.com"))
+            if(username.text.toString()=="cvr" && password.text.toString()=="cvr"){
+//                val intent:Intent = Intent(this,MainActivity2::class.java)
+//                intent.putExtra("username",username.text.toString())
+//                intent.putExtra("password",password.text.toString())
+                val intent:Intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://xhamster.com"))
                 startActivity(intent)
-                Toast.makeText(this,"Login success",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"login sucess",Toast.LENGTH_SHORT).show()
             }
             else{
-                Toast.makeText(this,"Error login",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Login failed",Toast.LENGTH_SHORT).show()
             }
         }
     }
